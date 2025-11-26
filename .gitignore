@@ -1,0 +1,3 @@
+# Ignorar arquivos de banco de dados e ambientes virtuais
+venv/
+*.db

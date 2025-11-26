@@ -1,15 +1,43 @@
-# 1 instalção das Dependências:
-   # pip install -r requirements.txt
+# 1 CRIE UMA PASTA NO SEU COMPUTADOR 
+
+# 2 ABRA A PASTA NO VS CODE
+
+# 3 ABRA O TERMINAL
+# OBS: PARA O PRÓXIMO PASSO O GITHUB TEM QUE ESTÁ COM O REPOSITORIO DO PROJETO APERTO. 
+
+# 4 COMANDO NO TERMINAL "git clone" E copie e cole o HTTPS do repositório
+
+# COMANDO NO TERMINAL: git clone https://github.com/Antony02082002/Projeto-Integrador-Desenvolvimetno-Web
+
+# ESTE COMANDO CLONARÁ O NOSSO REPOSITÓRIO DO PROJETO NO VS CODE 
+# DÊ ENTER
+# APÓS ISSO O PROJETO IRÁ APARECER NO SEU VS CODE
+
+ # SALVE E FECHE A PASTA
+
+ # 5 NO VS CODE ABRA UMA NOVA PASTA E ENCONTRE A PASTA CRIADA NO PASSO 1,
+ # ABRA A MESMA E DENTRO DELA VAI TER OUTRA PASTA COM O PROJETO CLONADO NO PASSO 4.
+ # NOME DA PASTA: "Projeto-Integrador-Desenvolvimetno-Web"
+
+# ABRA A PASTA NO VS CODE E VOCÊ VERÁ QUE O PROJETO DO GITHUB ESTÁ LÁ
 
 
-#  2 Configuração da Variável de ambiente:
-# Linux/macOS
-# export FLASK_APP=seu_app.py
-# Windows (PowerShell)
-#  $env:FLASK_APP="seu_app.py"
+ # 6 ABRA UM NOVO TERMINAL E VAMOS CRIAR UM AMBIENTE VIRTUAL:
+ # COMANDO NO TERMINAL: "Python -m venv venv"
 
+ # 7 ATIVAR O AMBIENTE VIRTUAL
+ # COMANDO NO TERMINAL: ".\venv\Scripts\Activate.ps1"
 
-# 3 Comando para execução:
- #  flask run
-# #4 Endereço de acesso:
- # 3 http://127.0.0.1:5000
+ # 8 INSTALAR AS DEPEDENCIAS 
+ # COMANDO NO TERMINAL: Pip install -r requirements.txt
+
+ # 9 DEFINIR A VÁRIAVEL 
+ # COMANDO NO TERMINAL: $env:FLASK_APP="app.py"
+
+# 10 INICIE O SERVIDOR
+# COMANDO NO TERMINAL: flask run
+
+# 11 APÓS O PROCESSAMENTO IRÁ APARECER O LINK WEB: http://127.0.0.1:5000
+# SIGA O LINK
+
+# Espero que tenha dado certo, faça os teste professor 
