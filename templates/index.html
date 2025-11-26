@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tarefas Web</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Meu Gestor de Tarefas</h1>
+            <p>Projeto Integrador - Aplicação Web</p>
+        </header>
+
+        <form id="task-form">
+            <input
+                type="text"
+                id="task-input"
+                placeholder="Digite o título da sua tarefa..."
+                autocomplete="off"
+            >
+            <button type="submit">Adicionar Tarefa</button>
+        </form>
+
+        <main>
+            <ul id="task-list">
+            </ul>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

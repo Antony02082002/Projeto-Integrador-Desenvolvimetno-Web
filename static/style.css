@@ -1,0 +1,135 @@
+/* --- Configurações Gerais --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding não afete o tamanho total */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5; /* Um cinza bem claro */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa a tela inteira */
+    padding: 20px;
+}
+
+/* --- Container Principal --- */
+.container {
+    width: 100%;
+    max-width: 500px; /* Limita a largura máxima */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 25px 30px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+/* --- Formulário de Adicionar Tarefa --- */
+#task-form {
+    display: flex;
+    gap: 10px; /* Espaço entre o input e o botão */
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex-grow: 1; /* Ocupa o máximo de espaço possível */
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+#task-form button {
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db; /* Azul */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#task-form button:hover {
+    background-color: #2980b9; /* Azul mais escuro */
+}
+
+/* --- Lista de Tarefas --- */
+#task-list {
+    list-style-type: none; /* Remove as bolinhas da lista */
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between; /* Texto de um lado, botão do outro */
+    align-items: center;
+
+    padding: 12px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    margin-bottom: 10px;
+
+    word-break: break-word; /* Quebra palavras longas */
+    transition: all 0.2s;
+}
+
+/* Estilo do texto da tarefa */
+#task-list li .task-text {
+    flex-grow: 1;
+    cursor: pointer; /* Indica que o texto é clicável */
+    margin-right: 15px;
+}
+
+/* --- Botão de Remover --- */
+#task-list li .delete-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #e74c3c; /* Vermelho */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    /* Faz o botão não encolher */
+    flex-shrink: 0;
+}
+
+#task-list li .delete-btn:hover {
+    background-color: #c0392b; /* Vermelho mais escuro */
+}
+
+/* --- Classe para Tarefa Concluída --- */
+#task-list li.completed .task-text {
+    text-decoration: line-through; /* Risca o texto */
+    color: #95a5a6; /* Cinza */
+    font-style: italic;
+}
+
+#task-list li.completed {
+    background-color: #fdfdfd;
+    opacity: 0.7;
+}
